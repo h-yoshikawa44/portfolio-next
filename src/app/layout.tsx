@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className={`${sawarabiMincho.variable} antialiased`}>
-        <header className="sticky top-0 z-10 px-14 py-3 from-brand-start to-brand-end bg-linear-to-b flex justify-between">
+        <header className="sticky top-0 z-10 md:px-14 py-3 px-4 from-brand-start to-brand-end bg-linear-to-b flex justify-between">
           <Link href="/">
             <div className="p-1 rounded-[50%] bg-white w-12 h-12 flex justify-center items-center">
               <Image
