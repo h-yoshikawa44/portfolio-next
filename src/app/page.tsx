@@ -4,11 +4,11 @@ import myIcon from '@/assets/images/my-icon.png';
 export default function Home() {
   return (
     <main className="flex min-h-screen w-full flex-col items-center justify-between sm:items-start">
-      <header className="bg-brand-primary h-100 w-full md:px-14 px-4 py-22">
+      <header className="bg-brand-primary h-100 w-full md:px-14 px-4 py-22 flex flex-col items-start gap-y-4">
         <h1 className="bg-white text-5xl inline-block p-1">
           h-yoshikawa44's Portfolio
         </h1>
-        <p className="text-3xl mt-4 bg-white inline-block py-1">
+        <p className="text-3xl bg-white inline-block py-1">
           よしのポートフォリオ
         </p>
       </header>
