@@ -8,7 +8,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-brand-primary: #202020;
+  --color-brand-primary: #323232;
+  --color-brand-secondary: #202020;
   --color-brand-start: #323232;
   --color-brand-end: #0e0e0e;
 }
@@ -17,6 +18,34 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+  }
+}
+
+@layer components {
+  .header-double-line {
+    position: relative;
+    display: inline-block;
+    padding: 0 100px;
+  }
+
+  .header-double-line:before,
+  .header-double-line:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 90px;
+    height: 4px;
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+  }
+
+  .header-double-line:before {
+    left: 0;
+  }
+
+  .header-double-line:after {
+    right: 0;
   }
 }
 
