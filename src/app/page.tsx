@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import zennIcon from '@/assets/icons/logo-only.svg';
 import myIcon from '@/assets/images/my-icon.png';
 
 export default function Home() {
@@ -56,6 +57,63 @@ export default function Home() {
             </p>
             <p>比較的慣れているのは TypeScript × React、Next.js あたり。</p>
           </div>
+          <table className="mt-4">
+            <tr>
+              <th>SNS:</th>
+              <td className="text-center w-20 place-items-baseline px-4 py-1">
+                <div className="flex gap-x-2">
+                  <a
+                    className=" bg-white rounded-[50%] w-9 h-9 p-1 flex items-center justify-center"
+                    title="X - @yoshi44_lion"
+                    href="https://x.com/yoshi44_lion"
+                  >
+                    <span className="i-devicon-twitter w-6 h-6"></span>
+                  </a>
+                  <a
+                    className=" bg-white rounded-[50%] w-9 h-9 p-1 flex items-center justify-center"
+                    title="Bluesky - @h-yoshikawa44.bsky.social"
+                    href="https://bsky.app/profile/h-yoshikawa44.bsky.social"
+                  >
+                    <span className="i-bi-bluesky w-6 h-6 bg-black"></span>
+                  </a>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>技術活動:</th>
+              <td className="text-center w-20 place-items-baseline px-4 py-1">
+                <div className="flex gap-x-2">
+                  <a
+                    className="bg-white rounded-[50%] w-9 h-9 p-1 flex items-center justify-center"
+                    title="GitHub - @h-yoshikawa44"
+                    href="https://github.com/h-yoshikawa44"
+                  >
+                    <span className="i-devicon-github w-6 h-6"></span>
+                  </a>
+                  <a
+                    className="bg-white rounded-[50%] w-9 h-9 p-1 flex items-center justify-center"
+                    title="個人ブログ"
+                    href="https://changeofpace.site"
+                  >
+                    <span className="i-bi-feather w-6 h-6 bg-black"></span>
+                  </a>
+                  <a
+                    className="bg-white rounded-[50%] w-9 h-9 p-1 flex items-center justify-center"
+                    title="Zenn - h_yoshikawa0724"
+                    href="https://zenn.dev/h_yoshikawa0724"
+                  >
+                    <Image
+                      src={zennIcon}
+                      alt="Zenn Icon"
+                      width={24}
+                      height={24}
+                      priority
+                    />
+                  </a>
+                </div>
+              </td>
+            </tr>
+          </table>
         </div>
       </section>
     </main>
