@@ -3,6 +3,7 @@ import zennIcon from '@/assets/icons/logo-only.svg';
 import myIcon from '@/assets/images/my-icon.png';
 import { HeaderText } from '@/common/HeaderText';
 import { Hero } from '@/common/Hero';
+import { SectionBase } from '@/common/SectionBase';
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
         mainTitle={`h-yoshikawa44's Portfolio`}
         subTitle="よしのポートフォリオ"
       />
-      <section className="bg-brand-secondary w-full md:px-14 py-14 px-4">
+      <SectionBase>
         <HeaderText>
           当サイト
           <wbr />
@@ -22,8 +23,8 @@ export default function Home() {
           <br />
           経験スキルや個人開発の履歴、各種技術活動に関するアカウントのリンクなどを集約しています。
         </p>
-      </section>
-      <section className="bg-brand-secondary w-full md:px-14 py-14 px-4">
+      </SectionBase>
+      <SectionBase>
         <HeaderText>
           管理人
           <wbr />
@@ -115,7 +116,7 @@ export default function Home() {
             </tbody>
           </table>
         </div>
-      </section>
+      </SectionBase>
     </main>
   );
 }
