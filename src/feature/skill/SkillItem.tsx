@@ -15,8 +15,8 @@ export function SkillItem({
         <span className={`${iconClassName} w-14 h-14`}></span>
       </div>
       <div>
-        <h4 className="text-lg bg-white inline p-1 font-bold">{name}</h4>
-        <p className="text-white mt-1">{description}</p>
+        <h4 className="text-lg bg-invert inline p-1 font-bold">{name}</h4>
+        <p className="text-invert mt-1">{description}</p>
       </div>
     </div>
   );

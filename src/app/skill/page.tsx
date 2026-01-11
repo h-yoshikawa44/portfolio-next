@@ -59,7 +59,7 @@ export default function Skill() {
       </SectionBase>
       <SectionBase>
         <HeaderText>所持資格</HeaderText>
-        <p className="mt-4 text-white">
+        <p className="mt-4 text-invert">
           ※バッジがある資格については、
           <a
             className="text-blue-300"
@@ -71,7 +71,7 @@ export default function Skill() {
           </a>{' '}
           に記録があります。
         </p>
-        <table className="mt-6 text-white border border-table-border w-full">
+        <table className="mt-6 text-invert border border-table-border w-full">
           <thead>
             <tr className="font-bold text-lg bg-brand-primary border-b border-table-border">
               <th className="p-2">名称</th>
