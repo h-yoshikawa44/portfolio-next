@@ -3,6 +3,7 @@ import { Hero } from '@/common/Hero';
 import { SectionBase } from '@/common/SectionBase';
 import { QUALIFICATIONS } from '@/data/qualification';
 import { EDITORS, ENVIRONMENTS, LANG_FRAMEWORKS } from '@/data/skill';
+import { SkillItem } from '@/feature/skill/SkillItem';
 
 export default function Skill() {
   return (
@@ -13,16 +14,12 @@ export default function Skill() {
         <ul className="mt-4 grid grid-cols-1 md:grid-cols-2 grid-rows-[minmax(100px,1fr)]">
           {EDITORS.map((editor) => {
             return (
-              <li key={editor.name} className="flex gap-x-8 items-center">
-                <div className="bg-white rounded-[50%] w-20 h-20 p-1 flex items-center justify-center shrink-0">
-                  <span className={`${editor.iconClassName} w-14 h-14`}></span>
-                </div>
-                <div>
-                  <h4 className="text-lg bg-white inline p-1 font-bold">
-                    {editor.name}
-                  </h4>
-                  <p className="text-white mt-1">{editor.description}</p>
-                </div>
+              <li key={editor.name}>
+                <SkillItem
+                  iconClassName={editor.iconClassName}
+                  name={editor.name}
+                  description={editor.description}
+                />
               </li>
             );
           })}
@@ -33,18 +30,12 @@ export default function Skill() {
         <ul className="mt-4 grid grid-cols-1 md:grid-cols-2 grid-rows-[minmax(100px,1fr)]">
           {ENVIRONMENTS.map((environment) => {
             return (
-              <li key={environment.name} className="flex gap-x-8 items-center">
-                <div className="bg-white rounded-[50%] w-20 h-20 p-1 flex items-center justify-center shrink-0">
-                  <span
-                    className={`${environment.iconClassName} w-14 h-14`}
-                  ></span>
-                </div>
-                <div>
-                  <h4 className="text-lg bg-white inline p-1 font-bold">
-                    {environment.name}
-                  </h4>
-                  <p className="text-white mt-1">{environment.description}</p>
-                </div>
+              <li key={environment.name}>
+                <SkillItem
+                  iconClassName={environment.iconClassName}
+                  name={environment.name}
+                  description={environment.description}
+                />
               </li>
             );
           })}
@@ -55,21 +46,12 @@ export default function Skill() {
         <ul className="mt-4 grid grid-cols-1 md:grid-cols-2 grid-rows-[minmax(100px,1fr)] gap-x-4 gap-y-6">
           {LANG_FRAMEWORKS.map((langFramework) => {
             return (
-              <li
-                key={langFramework.name}
-                className="flex gap-x-8 items-center"
-              >
-                <div className="bg-white rounded-[50%] w-20 h-20 p-1 flex items-center justify-center shrink-0">
-                  <span
-                    className={`${langFramework.iconClassName} w-14 h-14`}
-                  ></span>
-                </div>
-                <div>
-                  <h4 className="text-lg bg-white inline p-1 font-bold">
-                    {langFramework.name}
-                  </h4>
-                  <p className="text-white mt-1">{langFramework.description}</p>
-                </div>
+              <li key={langFramework.name}>
+                <SkillItem
+                  iconClassName={langFramework.iconClassName}
+                  name={langFramework.name}
+                  description={langFramework.description}
+                />
               </li>
             );
           })}
