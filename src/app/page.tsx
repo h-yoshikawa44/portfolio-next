@@ -1,21 +1,22 @@
 import Image from 'next/image';
 import zennIcon from '@/assets/icons/logo-only.svg';
 import myIcon from '@/assets/images/my-icon.png';
+import { HeaderText } from '@/common/HeaderText';
 import { Hero } from '@/common/Hero';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen w-full flex-col items-center justify-between sm:items-start">
+    <main className="flex min-h-screen w-full flex-col items-center justify-between">
       <Hero
         mainTitle={`h-yoshikawa44's Portfolio`}
         subTitle="よしのポートフォリオ"
       />
       <section className="bg-brand-secondary w-full md:px-14 py-14 px-4">
-        <h2 className="text-white text-xl md:text-2xl header-double-line mb-2 text-center md:text-left break-keep">
+        <HeaderText>
           当サイト
           <wbr />
           について
-        </h2>
+        </HeaderText>
         <p className="text-white">
           Web Developer である h-yoshikawa44 のポートフォリオサイトです。
           <br />
@@ -23,11 +24,11 @@ export default function Home() {
         </p>
       </section>
       <section className="bg-brand-secondary w-full md:px-14 py-14 px-4">
-        <h2 className="text-white text-xl md:text-2xl header-double-line mb-2 break-keep text-center md:text-left">
+        <HeaderText>
           管理人
           <wbr />
           プロフィール
-        </h2>
+        </HeaderText>
         <div className="p-4 bg-brand-primary rounded-xl text-white">
           <div className="grid grid-cols-[1fr_2fr] md:grid-cols-[1fr_4fr]">
             <div className="p-1 rounded-[50%] bg-white w-20 h-20 md:w-26 md:h-26 flex justify-center items-center">
