@@ -1,18 +1,15 @@
 import Image from 'next/image';
 import zennIcon from '@/assets/icons/logo-only.svg';
 import myIcon from '@/assets/images/my-icon.png';
+import { Hero } from '@/common/Hero';
 
 export default function Home() {
   return (
     <main className="flex min-h-screen w-full flex-col items-center justify-between sm:items-start">
-      <header className="bg-brand-primary h-100 w-full md:px-14 px-4 py-22 flex flex-col items-start gap-y-4">
-        <h1 className="bg-white text-5xl inline-block p-1">
-          h-yoshikawa44's Portfolio
-        </h1>
-        <p className="text-3xl bg-white inline-block py-1">
-          よしのポートフォリオ
-        </p>
-      </header>
+      <Hero
+        mainTitle={`h-yoshikawa44's Portfolio`}
+        subTitle="よしのポートフォリオ"
+      />
       <section className="bg-brand-secondary w-full md:px-14 py-14 px-4">
         <h2 className="text-white text-xl md:text-2xl header-double-line mb-2 text-center md:text-left break-keep">
           当サイト
