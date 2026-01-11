@@ -18,7 +18,7 @@ export default function Home() {
           <wbr />
           について
         </HeaderText>
-        <p className="text-white">
+        <p className="text-white mt-2">
           Web Developer である h-yoshikawa44 のポートフォリオサイトです。
           <br />
           経験スキルや個人開発の履歴、各種技術活動に関するアカウントのリンクなどを集約しています。
@@ -30,7 +30,7 @@ export default function Home() {
           <wbr />
           プロフィール
         </HeaderText>
-        <div className="p-4 bg-brand-primary rounded-xl text-white">
+        <div className="mt-2 p-4 bg-brand-primary rounded-xl text-white">
           <div className="grid grid-cols-[1fr_2fr] md:grid-cols-[1fr_4fr]">
             <div className="p-1 rounded-[50%] bg-white w-20 h-20 md:w-26 md:h-26 flex justify-center items-center">
               <Image
